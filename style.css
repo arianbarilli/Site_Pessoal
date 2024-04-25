@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080213;
+    color: #dcd1d1;
+}
+
+header {
+    background-color: #090909;
+    color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 2px solid #425365;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+    background-color: #1e1d1d;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+header nav ul li a:hover {
+    color: mediumturquoise;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #080808;
+    color: rgb(142, 140, 140);
+    text-align: center;
+    padding: 3px 0;
+}
+
+.line {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 1px;
+    background-color: #6d6868;
+    margin-top: 1.5em;
+}
+
+.content {
+    width: 60%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section#sobreMim .container {
+    display: flex;
+    align-items: center;
+}
+
+.section#experiencias .container {
+    display: flex;
+    align-items: center;
+}
+
+.back-to-top {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 70%;
+    text-align: center;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid #1eaba6;
+    border-bottom: 3px solid #1eaba6;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.section#sobreMim a {
+    color: #dcd1d1;
+}
